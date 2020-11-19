@@ -1,0 +1,184 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/*Navbar Section*/
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 60px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "about store . gmail images menu sign-in"; 
+    margin: 0 20px 0 10px;
+}
+a, p {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+#about {
+grid-area: about;
+justify-self: center;
+align-self: center;
+font-size: 13px;
+}
+#store {
+grid-area: store;
+justify-self: center;
+align-self: center;
+font-size: 13px;
+}
+#gmail {
+grid-area: gmail;
+justify-self: center;
+align-self: center;
+font-size: 13px;
+}
+#images {
+grid-area: images;
+justify-self: center;
+align-self: center;
+font-size: 13px;
+}
+#menu {
+grid-area: menu;
+justify-self: center;
+align-self: center;
+font-size: 13px;
+margin-right: 20px;
+}
+#sign-in {
+grid-area: sign-in;
+justify-self: center;
+align-self: center;
+font-size: 13px;
+text-align: center;
+font-weight: bold;
+background-color: #4285f4;
+border: 1px solid #4285f4;
+line-height: 30px;
+color: white;
+height: 30px;
+width: 65px;
+}
+/*Main Section*/
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". flexbox2 .";
+}
+a:hover {
+    text-decoration: underline;
+}
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    grid-area: search;
+    height: 35px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+#flexbox {
+    grid-area: flexbox;
+    display: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search {
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    margin-right: 25px;
+    padding: 7px 16px 7px 16px;
+    border-radius: 5px;
+}
+#ifl {
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    padding: 7px 16px 7px 16px;
+    border-radius: 5px;
+}
+#google-search:hover {
+    border: 1px solid #f8f9fa;
+    box-shadow: 1px 1px 5px grey;
+    
+}
+#ifl:hover {
+    border: 1px solid #f8f9fa;
+    box-shadow: 1px 1px 5px grey;
+    
+}
+#flexbox2 {
+    grid-area: flexbox2;
+    justify-self: center;
+    font-size: small;
+}
+#francais {
+    color: blue;
+}
+
+/*Footer Section*/
+#footer{
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business hsw . privacy terms settings";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2f2f2;
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
